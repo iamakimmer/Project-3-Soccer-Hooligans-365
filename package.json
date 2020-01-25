@@ -1,30 +1,34 @@
 {
-  "name": "Project-3-Soccer-Hooligans-365",
-  "version": "1.0.0",
-  "description": "React Based Soccer Application",
-  "main": "server.js",
+  "name": "soccer",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
-    "cra-template": "^1.0.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0"
+    "react-scripts": "3.3.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rocha8524/Project-3-Soccer-Hooligans-365.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rocha8524/Project-3-Soccer-Hooligans-365/issues"
-  },
-  "homepage": "https://github.com/Rocha8524/Project-3-Soccer-Hooligans-365#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
