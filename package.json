@@ -1,0 +1,30 @@
+{
+  "name": "Project-3-Soccer-Hooligans-365",
+  "version": "1.0.0",
+  "description": "React Based Soccer Application",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cra-template": "^1.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rocha8524/Project-3-Soccer-Hooligans-365.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rocha8524/Project-3-Soccer-Hooligans-365/issues"
+  },
+  "homepage": "https://github.com/Rocha8524/Project-3-Soccer-Hooligans-365#readme"
+}
