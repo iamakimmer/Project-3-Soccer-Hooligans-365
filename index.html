@@ -1,34 +1,37 @@
 <html>
 <head>
-<title> Signup Form </title>
+<title> Soccer Hooligans 365 </title>
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="stylesheet" href="reset.css">
 <link rel="manifest" href="site.webmanifest"><link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
 
-<img src="LOGO.png" alt="Paris" style="width:50%;">
+  <a href="login.html"><img src="LOGO.png" alt="Paris" style="width:50%;"></a>
 
-<div id="login-box">
-<div class="left=box">
-<h1> Sign Up</h1>
+<h2>Modal Example</h2>
 
-<input type="text" name="username" placeholder="Username" />
-<input type="text" name="email" placeholder="Email" />
-<input type="password" name="password" placeholder="Password" />
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
 
-<input type="password" name="password2" placeholder="Retype Password" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-<input type="submit" name="sign-up-button" value="Sign Up" />
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+<form method="post" action="connect.php">
+Username : <input type="text" name="username"><br><br>
+Password : <input type="password" name="password"><br><br>
+<input type="submit" value="Submit">
+</form>
+  </div>
 
 </div>
-<div class="right-box">
-<span class="signinwith">Sign in with<br/></span>
 
-</div>
-
-</div>
-
+<script src="script.js"></script>
 </body>
 </html>
