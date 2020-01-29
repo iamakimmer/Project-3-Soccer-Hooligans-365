@@ -1,0 +1,68 @@
+/*
+    font-family: 'Sedgwick Ave', cursive;
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+    font-family: 'Lobster', cursive;
+*/
+.App {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+
+.App-header {
+  background: #525252;
+  border-radius: 17px;
+  font-family: 'Sedgwick Ave', cursive;
+  height: 60px;
+  padding: 2px;
+  
+  
+  color: white;
+  
+}
+
+.country_select {
+  padding-bottom: 15px;
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+}
+.list-group-item{
+  cursor: pointer;
+}
+.list-group-item:hover{
+  background-color: #777;
+}
+.list-group-item:active{
+  background-color: #777;
+}
+.App-intro {
+  font-size: large;
+  
+}
+th {
+    text-align: center;
+}
+.banner {
+  padding: 10px;
+  
+}
+.banner img {
+  border: 1px solid #222;
+}
+
+.team_detail ul {
+    list-style: none !important;
+    margin-left: -50px;
+}
+.col-title {
+  font-family: 'Lobster', cursive;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
