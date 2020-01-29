@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 class Table extends Component {
-
     render() {
         var team = this.props.leagueData.map((team, i) => {
             return (
