@@ -17,6 +17,7 @@ const TeamDetail = (props) => {
             </li>
         );
     })
+    
     //TODO:
     //console.log(props.teamDetail);
 

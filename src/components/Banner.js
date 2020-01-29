@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Banner = (props) => {
-    const bannerpath = "static/img/"+props.leagueSelect+".png";
+const LeagueLogo = (props) => {
+    const imagepath = "images"+props.leagueSelect+".png";
     return(
-        <div className="banner">
-            <img src={bannerpath} alt="" />
+        <div className="images">
+            <img src={imagepath} alt="" />
         </div>
     );
 }
 
-export default Banner;
+export default LeagueLogo;
