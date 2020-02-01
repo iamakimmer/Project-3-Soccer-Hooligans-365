@@ -1,0 +1,14 @@
+.Squad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px 20px;
+
+  dl {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    grid-gap: 7px 5px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+  }
+}

@@ -1,11 +1,14 @@
-import React from '../../node_modules/react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Header = (props) => {
-    return (
-        <header>
-            {props.children}
-        </header>
-    );
-};
+function Header() {
+  return (
+    <div className="Header">
+      <h1>
+        <Link to="/">Soccer Hooligans 365</Link>
+      </h1>
+    </div>
+  );
+}
 
 export default Header;

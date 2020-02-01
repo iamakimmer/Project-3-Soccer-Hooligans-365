@@ -1,0 +1,15 @@
+.Competitions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  li {
+    text-align: center;
+  }
+
+  img {
+    margin: 0 auto;
+    max-height: 100px;
+    display: block;
+  }
+}
