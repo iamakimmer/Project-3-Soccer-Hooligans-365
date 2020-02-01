@@ -18,7 +18,7 @@ function Home() {
       setCompetitions(
         result.data.competitions.filter(
           competition =>
-            competition.area.id === 2072 && competition.plan === "TIER_ONE"
+            competition.plan === "TIER_ONE"
         )
       );
       setIsLoading(false);
@@ -33,7 +33,7 @@ function Home() {
         <Loading />
       ) : (
         <div>
-          <ul className="Competitions">
+          <ul className="=competitions">
             {competitions.map(competition => {
               const emblem = require("../assets/competitions/" +
                 competition.id +

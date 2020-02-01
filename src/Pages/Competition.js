@@ -32,53 +32,54 @@ function Competition({ match }) {
       {isLoading ? (
         <Loading />
       ) : (
-        <div>
-          <h2>{competition.name}</h2>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>Team</th>
-                <th className="numeric">Played</th>
-                <th className="numeric">Won</th>
-                <th className="numeric">Drawn</th>
-                <th className="numeric">Lost</th>
-                <th className="numeric">For</th>
-                <th className="numeric">Against</th>
-                <th className="numeric">
-                  <abbr title="Goal Difference">GD</abbr>
-                </th>
-                <th className="numeric">Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              {standings.map((standing, index) => (
-                <tr
-                  key={index}
-                  className={
-                    index + 1 === standings.length - 3 ? "relegation" : ""
-                  }
-                >
-                  <td>{standing.position}</td>
-                  <td className="bold">
-                    <Link to={`/team/${standing.team.id}`}>
-                      {standing.team.name}
-                    </Link>
-                  </td>
-                  <td className="numeric">{standing.playedGames}</td>
-                  <td className="numeric">{standing.won}</td>
-                  <td className="numeric">{standing.draw}</td>
-                  <td className="numeric">{standing.lost}</td>
-                  <td className="numeric">{standing.goalsFor}</td>
-                  <td className="numeric">{standing.goalsAgainst}</td>
-                  <td className="numeric">{standing.goalDifference}</td>
-                  <td className="numeric bold">{standing.points}</td>
+          <div>
+            <h2>{competition.name}</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Team</th>
+                  <th className="numeric">Played</th>
+                  <th className="numeric">Won</th>
+                  <th className="numeric">Drawn</th>
+                  <th className="numeric">Lost</th>
+                  <th className="numeric">For</th>
+                  <th className="numeric">Against</th>
+                  <th className="numeric">
+                    <abbr title="Goal Difference">GD</abbr>
+                  </th>
+                  <th className="numeric">Points</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+              </thead>
+              <tbody>
+                {standings.map((standing, index) => (
+                  <tr
+                    key={index}
+                    className={
+                      index + 1 === standings.length - 3 ? "relegation" : ""
+                    }
+                  >
+                    <td>{standing.position}</td>
+                    <td className="bold">
+                      <img className="Crest" src={standing.team.crestUrl} alt={standing.team.shortName} />
+                      <Link to={`/team/${standing.team.id}`}>
+                        {standing.team.name}
+                      </Link>
+                    </td>
+                    <td className="numeric">{standing.playedGames}</td>
+                    <td className="numeric">{standing.won}</td>
+                    <td className="numeric">{standing.draw}</td>
+                    <td className="numeric">{standing.lost}</td>
+                    <td className="numeric">{standing.goalsFor}</td>
+                    <td className="numeric">{standing.goalsAgainst}</td>
+                    <td className="numeric">{standing.goalDifference}</td>
+                    <td className="numeric bold">{standing.points}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
     </div>
   );
 }
