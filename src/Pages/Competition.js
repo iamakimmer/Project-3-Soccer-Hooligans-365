@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import API from '../API';
 import Loading from '../Components/Loading';
+import NavBar from '../Components/NavBar';
 
 function Competition({ match }) {
   const [competition, setCompetition] = useState({});
@@ -33,6 +34,9 @@ function Competition({ match }) {
         <Loading />
       ) : (
           <div>
+            <br />
+            <NavBar />
+            <br />
             <h2>{competition.name}</h2>
             <table>
               <thead>

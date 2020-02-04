@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 import API from '../API';
 import Loading from '../Components/Loading';
-import Squad from '../Components/Squad';
+import Squad from './Squad';
 
 function Team({ match }) {
   const [team, setTeam] = useState([]);
