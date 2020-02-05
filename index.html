@@ -1,18 +1,24 @@
 <html>
+<html lang="en-US">
 
 <head>
-  <title> Soccer Hooligans 365 </title>
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" type="text/css" href="login.css">
+<meta charset="utf-8">
+<title> Soccer Hooligans 365 </title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="src\assets\competitions\apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src\assets\competitions\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src\assets\competitions\favicon-16x16.png">
+  <link rel="stylesheet" href="src\Pages\reset.css">
+  <link rel="manifest" href="src\assets\competitions\site.webmanifest">
+  <link rel="stylesheet" type="text/css" href="src\Pages\index.css">
 </head>
 
 <body>
-
-  <a href="login.html"><img src="LOGO.png" alt="Paris" style="width:50%;"></a>
+  <a href="login.html"><img src="src/assets/competitions/logo.png" alt="Paris" style="width:300px;" height="400px;"></a>
 
   <h2>Modal Example</h2>
 
@@ -24,18 +30,58 @@
 
     <!-- Modal content -->
     <div class="modal-content">
-      <span class="close">&times;</span>
-
-      <form method="post" action="connect.php">
-        Username : <input type="text" name="username"><br><br>
-        Password : <input type="password" name="password"><br><br>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
+    <br> 
+    <br> 
+    <br> 
+    <div class="container" > 
+        <div class="row"> 
+        <div class="col-md-3"> 
+                      
+        </div> 
+                  
+        <div class="col-md-6 main"> 
+                      
+            <form action="/sign_up" method="post"> 
+                      
+            <h1> Signup form </h1> 
+                              
+            <input class="box" type="text" name="name" id="name" 
+            placeholder="Name"  required /><br> 
+                              
+            <input class="box" type="email" name="email" id="email" 
+            placeholder="E-Mail " required /><br> 
+                              
+            <input class="box" type="password" name="password" 
+            id="password" placeholder="Password " required/><br> 
+                              
+            <input class="box" type="text" name="phone" id="phone"  
+            placeholder="Phone Number " required/><br> 
+                        <br> 
+            <input type="submit" id="submitDetails"  
+            name="submitDetails" value="Submit" /><br> 
+                      
+            </form> 
+                      
+        </div> 
+                  
+                  
+        <div class="col-md-3"> 
+        </div> 
+                  
+    </div> 
+    </div> 
+                  
+                  
+        <div class="col-md-3"> 
+        </div> 
+                  
+    </div> 
+    </div> 
+    <div>
 
   </div>
 
-  <script src="script.js"></script>
+  <script src="src/Pages/script.js"></script>
 </body>
 
 </html>
