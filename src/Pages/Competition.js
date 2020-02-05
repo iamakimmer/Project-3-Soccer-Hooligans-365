@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import API from '../API';
-import Loading from '../Components/Loading';
 import NavBar from '../Components/NavBar';
+import Loading from '../Components/Loading';
 
 function Competition({ match }) {
   const [competition, setCompetition] = useState({});

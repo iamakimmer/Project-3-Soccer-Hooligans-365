@@ -28,14 +28,20 @@ function MatchList({ match }) {
     }, [id]);
 
     return (
-        <div className="matchContainer">
-            <div className="matchCard" key={match.id}>
-                <h2 key={match.homeTeam.id}>{match.homeTeam.name}</h2>
-                <h3 key={match.id}>{match.score.fullTime.homeTeam} : {match.score.fullTime.awayTeam}</h3>
-                <h2 key={match.awayTeam.id}>{match.awayTeam.name}</h2>
-            </div>
+        <div>
+            {isLoading ? (
+                <Loading />
+            ) : (
+                    <div className="Fixtures">
+                        <div className="Fixtures" key={match.id}>
+                            <h2 key={match.homeTeam.id}>{match.homeTeam.name}</h2>
+                            <h3 key={match.id}>{match.score.fullTime.homeTeam} : {match.score.fullTime.awayTeam}</h3>
+                            <h2 key={match.awayTeam.id}>{match.awayTeam.name}</h2>
+                        </div>
+                    </div>
+                )}
         </div>
-    );
+    )
 }
 
 export default MatchList;

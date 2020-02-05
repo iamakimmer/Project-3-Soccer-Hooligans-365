@@ -1,7 +1,6 @@
 import './Squad.scss';
-
-import { differenceInYears, parseISO } from 'date-fns';
 import React from 'react';
+import { differenceInYears, parseISO } from 'date-fns';
 
 function Squad(props) {
   const { players } = props;

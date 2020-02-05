@@ -1,5 +1,4 @@
 import './Loading.scss';
-
 import React from 'react';
 
 function Loading() {

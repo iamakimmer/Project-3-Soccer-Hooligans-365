@@ -1,10 +1,8 @@
 import './Home.scss';
-
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-
 import API from '../API';
+import { Link } from 'react-router-dom';
 import Loading from '../Components/Loading';
+import React, { useEffect, useState } from 'react';
 
 function Home() {
   const [competitions, setCompetitions] = useState([]);
@@ -32,24 +30,24 @@ function Home() {
       {isLoading ? (
         <Loading />
       ) : (
-        <div>
-          <ul className="=competitions">
-            {competitions.map(competition => {
-              const emblem = require("../assets/competitions/" +
-                competition.id +
-                ".png");
-              return (
-                <li key={competition.id}>
-                  <Link to={`/competition/${competition.id}`}>
-                    <img src={emblem} alt="" />
-                    <h5>{competition.name}</h5>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )}
+          <div>
+            <ul className="=competitions">
+              {competitions.map(competition => {
+                const emblem = require("../assets/competitions/" +
+                  competition.id +
+                  ".png");
+                return (
+                  <li key={competition.id}>
+                    <Link to={`/competition/${competition.id}`}>
+                      <img src={emblem} alt="" />
+                      <h5>{competition.name}</h5>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
     </div>
   );
 }
