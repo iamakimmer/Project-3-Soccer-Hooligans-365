@@ -1,11 +1,9 @@
 import './Team.scss';
-
-import { groupBy } from 'lodash';
-import React, { useEffect, useState } from 'react';
-
 import API from '../API';
+import Squad from './Squad';
+import { groupBy } from 'lodash';
 import Loading from '../Components/Loading';
-import Squad from '../Components/Squad';
+import React, { useEffect, useState } from 'react';
 
 function Team({ match }) {
   const [team, setTeam] = useState([]);
@@ -52,22 +50,22 @@ function Team({ match }) {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className="Team">
-          <h2>{team.name}</h2>
-          <h3>Details</h3>
-          <img className="Crest" src={team.crestUrl} alt={team.shortName} />
-          <p>From: {team.area && team.area.name ? team.area.name : ""}</p>
-          <p>Founded: {team.founded}</p>
-          <p>Stadium: {team.venue}</p>
-          <p>
-            Website: <a href={team.website}>{team.website}</a>
-          </p>
+          <div className="Team">
+            <h2>{team.name}</h2>
+            <h3>Details</h3>
+            <img className="Crest" src={team.crestUrl} alt={team.shortName} />
+            <p>From: {team.area && team.area.name ? team.area.name : ""}</p>
+            <p>Founded: {team.founded}</p>
+            <p>Stadium: {team.venue}</p>
+            <p>
+              Website: <a href={team.website}>{team.website}</a>
+            </p>
 
-          {activeCompetitions}
-          <h3>Squad</h3>
-          <Squad players={team.squad} />
-        </div>
-      )}
+            {activeCompetitions}
+            <h3>Squad</h3>
+            <Squad players={team.squad} />
+          </div>
+        )}
     </div>
   );
 }
