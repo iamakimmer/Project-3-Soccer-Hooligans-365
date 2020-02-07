@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
 import API from '../API';
+import NavBar from '../Components/NavBar';
 import Loading from '../Components/Loading';
+import React, { useEffect, useState } from 'react';
 
-function MatchList({ match }) {
-    const [matches, setFixtures] = useState([]);
+function MatchList({ fixture }) {
+    const [match, setFixtures] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    const id = match.params.id;
+    const id = fixture.params.id;
 
     useEffect(() => {
         const fetchMatches = async () => {
@@ -24,11 +25,15 @@ function MatchList({ match }) {
             {isLoading ? (
                 <Loading />
             ) : (
-                    <div className="Fixtures">
-                        <div className="Fixtures" key={matches.id}>
-                            <h2 key={matches.homeTeam.id}>{matches.homeTeam.name}</h2>
-                            <h3 key={matches.id}>{matches.score.fullTime.homeTeam} : {matches.score.fullTime.awayTeam}</h3>
-                            <h2 key={matches.awayTeam.id}>{matches.awayTeam.name}</h2>
+                    <div>
+                        <br/>
+                        <NavBar />
+                        <div className="Fixtures">
+                            <div className="Fixtures" key={match.id}>
+                                <h2 key={match.homeTeam.id}>{match.homeTeam.name}</h2>
+                                <h3 key={match.id}>{match.score.fullTime.homeTeam} : {match.score.fullTime.awayTeam}</h3>
+                                <h2 key={match.awayTeam.id}>{match.awayTeam.name}</h2>
+                            </div>
                         </div>
                     </div>
                 )}
