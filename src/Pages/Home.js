@@ -31,7 +31,7 @@ function Home() {
         <Loading />
       ) : (
           <div>
-            <ul className="=competitions">
+            <li className="=competitions">
               {competitions.map(competition => {
                 const emblem = require("../assets/competitions/" +
                   competition.id +
@@ -45,7 +45,7 @@ function Home() {
                   </li>
                 );
               })}
-            </ul>
+            </li>
           </div>
         )}
     </div>

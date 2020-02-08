@@ -1,5 +1,128 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+html, body { 
+  background: url("./assets/competitions/background5.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
 }
+    
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 8px;
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 150px;
+height: 150px;
+}
+
+a {
+color: whitesmoke;
+font-family: "Times New Roman", Times, serif;
+}
+
+/* unvisited link */
+a:link {
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* visited link */
+a:visited {
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* mouse over link */
+a:hover {
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* selected link */
+a:active {
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+}
+    
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content */
+.modal-content {
+background-color: gray;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 40%;
+}
+      
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+  
+      
+
+.main{ 
+    padding:20px; 
+    font-family: 'Helvetica', serif; 
+    box-shadow: 5px 5px 7px 5px #888888; 
+      
+} 
+.main h1{ 
+    font-size: 40px; 
+    text-align:center; 
+    font-family: 'Helvetica', serif; 
+      
+} 
+input{ 
+    font-family: 'Helvetica', serif; 
+    width: 100%; 
+    font-size: 20px; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    border: none; 
+    border-bottom: 2px solid #767474; 
+} 
+input[type=submit] { 
+    font-family: 'Helvetica', serif; 
+    width: 100%; 
+    background-color: #767474; 
+    border: none; 
+    color: white; 
+    padding: 16px 32px; 
+    margin: 4px 2px; 
+    border-radius: 10px; 
+} 
