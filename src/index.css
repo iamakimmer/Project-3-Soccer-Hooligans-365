@@ -1,11 +1,52 @@
-html {
-background-color: black;
+html, body { 
+  background: url("./assets/competitions/background5.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
 }
     
 img {
 display: block;
 margin-left: auto;
 margin-right: auto;
+border-radius: 8px;
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 150px;
+height: 150px;
+}
+
+a {
+color: whitesmoke;
+font-family: "Times New Roman", Times, serif;
+}
+
+/* unvisited link */
+a:link {
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* visited link */
+a:visited {
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* mouse over link */
+a:hover {
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* selected link */
+a:active {
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
 }
     
 .modal {
@@ -50,7 +91,6 @@ font-weight: bold;
         margin: 0;
         padding: 0;
         font-family: sans-serif;
-        background-color: black;
       }
   
       
