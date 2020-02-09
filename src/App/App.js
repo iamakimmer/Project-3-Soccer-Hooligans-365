@@ -16,10 +16,10 @@ function App() {
       <div className="App">
         <Header />
         <Route path="/" exact component={Home} />
-        <Route path="/about" component={Competition} />
+        <Route path="/competition" component={Competition} />
         <Route path="/competition/:id" component={Competition} />
-        <Route path="/competition/:id/fixtures" component={Fixtures} />
-        <Route path="/competition/:id/scorers" component={Scorers} />
+        <Route path="/fixtures/:id" component={Fixtures} />
+        <Route path="/scorers/:id" component={Scorers} />
         <Route path="/team/:id" component={Team} />
       </div>
     </Router>
