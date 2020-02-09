@@ -3,7 +3,7 @@ import NavBar from '../Components/NavBar';
 import Loading from '../Components/Loading';
 import React, { useEffect, useState } from 'react';
 
-function MatchList({ fixture }) {
+function Fixtures({ fixture }) {
     const [match, setFixtures] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const id = fixture.params.id;
@@ -41,4 +41,4 @@ function MatchList({ fixture }) {
     )
 }
 
-export default MatchList;
+export default Fixtures;

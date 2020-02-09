@@ -3,7 +3,7 @@ import NavBar from '../Components/NavBar';
 import Loading from '../Components/Loading';
 import React, { useEffect, useState } from 'react';
 
-function GoalScorers({ goal }) {
+function Scorers({ goal }) {
     const [competition, setCompetition] = useState({});
     const [score, setGoals] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -14,7 +14,9 @@ function GoalScorers({ goal }) {
             setIsLoading(true);
             const result = await API.get(`competitions/${id}/scorers`);
 
-            setGoals(result.data.scorers);
+            setGoals(result.data.scorers          
+            .filter(scorer => scorer.type === "TOTAL")[0]
+            .table.sort((a, b) => a.position - b.position));
 
             setCompetition(result.data.competition);
             setIsLoading(false);
@@ -59,4 +61,4 @@ function GoalScorers({ goal }) {
     );
 }
 
-export default GoalScorers;
+export default Scorers;
