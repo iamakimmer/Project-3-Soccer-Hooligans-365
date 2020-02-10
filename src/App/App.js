@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from '../Pages/Home';
 import Team from '../Pages/Team';
@@ -15,11 +15,13 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Route path="/" exact component={Home} />
-        <Route path="/competition/:id" component={Competition} />
-        <Route path="/fixtures/:id" component={Fixtures} />
-        <Route path="/scorers/:id" component={Scorers} />
-        <Route path="/team/:id" component={Team} />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/competition/:id" component={Competition} />
+          <Route path="/fixtures/:id" component={Fixtures} />
+          <Route path="/scorers/:id" component={Scorers} />
+          <Route path="/team/:id" component={Team} />
+        </Switch>
       </div>
     </Router>
   );

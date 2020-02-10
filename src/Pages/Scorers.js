@@ -14,9 +14,7 @@ function Scorers({ goal }) {
             setIsLoading(true);
             const result = await API.get(`competitions/${id}/scorers`);
 
-            setGoals(result.data.scorers          
-            .filter(scorer => scorer.type === "TOTAL")[0]
-            .table.sort((a, b) => a.position - b.position));
+            setGoals(result.data.scorer);
 
             setCompetition(result.data.competition);
             setIsLoading(false);
