@@ -20,7 +20,7 @@ function signUp() {
     const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
     promise.catch(e => alert(e.message));
 
-    alert("Signed Up");
+    console.log("Signed Up");
 }
 
 function signIn() {
@@ -35,16 +35,16 @@ function signIn() {
 
 function signOut() {
     auth.signOut();
-    alert("signed Out");
+    console.log("signed Out");
 }
 
 auth.onAuthStateChanged(function(user){
     if (user) {
 var email = user.email;
-alert("Active User " + email);
+console.log("Active User " + email);
 
     }else {
-alert("No Active User")
+console.log("No Active User")
     }
 })
 
