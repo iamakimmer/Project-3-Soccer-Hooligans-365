@@ -13,22 +13,17 @@
         <h1> Account Login </h1>
         <div class="textbox">
             <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="Username" name="" value="">
+            <input type="text" placeholder="Username" name="" value="" id="email">
         </div>
 
         <div class="textbox">
             <i class="fa fa-lock" aria-hidden="true"></i>
-            <input type="text" placeholder="Password" name="" value="">
+            <input type="text" placeholder="Password" name="" value="" id="password">
         </div>
-        
-        <input class="btn" type="button" name="signIn" value="Sign In">
-    </div>
 
-
-
-    <button onclick="signUp()" id="signUp()"> Sign Up </button>
-    <button onclick="signIn()" id="signIn()"> Sign In </button>
-    <button onclick="signOut()" id="signUp()"> Sign Out </button>
+        <input class="btn" type="button" name="signIn" value="Sign In" onclick="signIn()" id="signIn()">
+        <input class="btn" type="button" name="signUp" value="Sign Up" onclick="signUp()" id="signUp()">
+        <input class="btn" type="button" name="signOut" value="Sign Out" onclick="signOut()" id="signout()">
     </div>
 </body>
 
