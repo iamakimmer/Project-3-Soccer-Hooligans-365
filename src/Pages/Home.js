@@ -1,4 +1,4 @@
-import './Home.scss';
+import './home.css';
 import API from '../API';
 import { Link } from 'react-router-dom';
 import Loading from '../Components/Loading';

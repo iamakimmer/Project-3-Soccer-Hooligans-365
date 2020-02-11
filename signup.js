@@ -38,13 +38,15 @@ function signOut() {
     console.log("signed Out");
 }
 
-auth.onAuthStateChanged(function(user){
+auth.onAuthStateChanged(function (user) {
     if (user) {
+
 var email = user.email;
 console.log("Active User " + email);
 
     }else {
 console.log("No Active User")
+
     }
 })
 
