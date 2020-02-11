@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import League from "./components/League";
-import Loading from "./components/Loading";
-import DateNavBarBtn from "./components/DateNavBarBtn";
-import TickClock from "./components/TickClock";
+import League from "../Components/League";
+import Loading from "../Components/Loading";
+import DateNavBarBtn from "../Components/DateNavBarBtn";
+import TickClock from "../Components/TickClock";
 
 import {
   rearrangeMatches,
   getDayFromToday,
   getDateFromToday,
   isToday
-} from "./utilities/utilities";
+} from "../utilities/utilities";
 
 export default class App extends Component {
   constructor() {

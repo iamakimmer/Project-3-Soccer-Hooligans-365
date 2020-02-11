@@ -8,9 +8,9 @@ var firebaseConfig = {
     //messagingSenderId: "447669395746",
     appId: "1:447669395746:web:931e5bf47bbecb4574457b",
     measurementId: "G-ZGZTN56T30"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 //make auth and firestore references
 //db firestore init
@@ -19,12 +19,12 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 
 //signup sign in and log out
-const signupForm  = $("#signup-form");
+const signupForm = $("#signup-form");
 const logOut = $("#logout");
 const loginForm = $("#loginForm");
 
 //signup method
-signupForm.on("submit", function(e) {
+signupForm.on("submit", function (e) {
     e.preventDefault();
 
     //get value of signup input fields
@@ -32,38 +32,38 @@ signupForm.on("submit", function(e) {
     const password = $("#password-signup").val();
 
     //auth method to create account in firebase
-    auth.createUserWithEmailAndPassword(email, password).then(function(credential) {
+    auth.createUserWithEmailAndPassword(email, password).then(function (credential) {
         //grab modal
         const signUpModal = $("#signUpModalCenter")
 
         //close and reset the modal
         signUpModal.modal('hide');
         $("#signup-form")[0].reset();
-    }).catch(function(err){
+    }).catch(function (err) {
         console.log(err.message);
         $("#signup-error").text("Password must be at least six (6) characters long");
     });
 })
 
 //logout method
-logOut.on("click", function(e){
+logOut.on("click", function (e) {
     e.preventDefault();
     auth.signOut();
 })
 
 //login form submit event listener
-loginForm.on("submit", function(e) {
+loginForm.on("submit", function (e) {
     e.preventDefault();
     //get value of user login input fields
     const email = $("#email-login").val();
     const password = $("#password-login").val();
 
-    auth.signInWithEmailAndPassword(email, password).then(function(credential) {
+    auth.signInWithEmailAndPassword(email, password).then(function (credential) {
         //close modal and reset form
         const logInModal = $("#logInModalCenter");
         logInModal.modal('hide');
         $("#loginForm")[0].reset();
-    }).catch(function(err) {
+    }).catch(function (err) {
         console.log(err.message);
         $("#login-error").text('Incorrect username or password');
         $("#loginForm")[0].reset();
@@ -71,16 +71,16 @@ loginForm.on("submit", function(e) {
 })
 
 //listening to auth status changes
-auth.onAuthStateChanged(function(user) {
+auth.onAuthStateChanged(function (user) {
     if (user) {
         //recipe favs
-        db.collection("recipe-favorites").onSnapshot(function(snapshot) {
+        db.collection("recipe-favorites").onSnapshot(function (snapshot) {
             $("#recipe-favorites").empty();
             recipeSetUp(snapshot.docs);
         })
-        
+
         //restaurant faves
-        db.collection("restaurant-favorites").onSnapshot(function(snapshot) {
+        db.collection("restaurant-favorites").onSnapshot(function (snapshot) {
             $("#restaurant-favorites").empty();
             restaurantSetUp(snapshot.docs);
         })
@@ -100,7 +100,7 @@ auth.onAuthStateChanged(function(user) {
 
 //set up restaurant favorites
 function restaurantSetUp(data) {
-    if(data.length) {
+    if (data.length) {
         $(".logInReq").hide();
         data.forEach(doc => {
             //search favorite obj is each object from restaurant collection
@@ -110,7 +110,7 @@ function restaurantSetUp(data) {
             button.text(searchFav.city);
             button.attr("class", "btn btn-outline-success text-center font-weight-bold mx-4 my-4 text-dark");
             //on click for ajax call
-            button.on("click", function() {
+            button.on("click", function () {
                 restaurantSearch(searchFav.city);
             })
             //add button to favorites section
@@ -123,7 +123,7 @@ function restaurantSetUp(data) {
 
 //set up recipe favorites
 function recipeSetUp(data) {
-    if(data.length) {
+    if (data.length) {
         $(".logInReq").hide();
         data.forEach(doc => {
             //search favorite obj is each object from restaurant collection
@@ -134,7 +134,7 @@ function recipeSetUp(data) {
             button.text(name);
             button.attr("class", "btn btn-outline-success text-center font-weight-bold mx-4 my-4 text-dark");
             //on click function for ajax call
-            button.on("click", function() {
+            button.on("click", function () {
                 recipeSearch(name);
             })
             $("#recipe-favorites").append(button);
@@ -147,18 +147,18 @@ function recipeSetUp(data) {
 
 //add to recipe favorites function
 function addRecipeFavorite(fav) {
-    db.collection("recipe-favorites").add({name: fav}).then(function(){
+    db.collection("recipe-favorites").add({ name: fav }).then(function () {
         console.log(`${fav} added to recipes`);
-    }).catch(function(err){
+    }).catch(function (err) {
         console.log(err.message);
     });
 }
 
 //add to restaurant favorites function
 function addRestaurantFavorite(fav) {
-    db.collection("restaurant-favorites").add({city: fav}).then(function(){
+    db.collection("restaurant-favorites").add({ city: fav }).then(function () {
         console.log(`${fav} added to restaurants`);
-    }).catch(function(err){
+    }).catch(function (err) {
         console.log(err.message);
     });
 };

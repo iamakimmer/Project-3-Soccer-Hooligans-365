@@ -7,6 +7,7 @@ import Team from '../Pages/Team';
 import Scorers from "../Pages/Scorers";
 // import NavBar from "../components/NavBar";
 import Header from '../Components/Header';
+import GameScores from "../Pages/GameScores"
 import Competition from '../Pages/Competition';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/competition/:id" component={Competition} />
           <Route path="/scorers/:id" component={Scorers} />
           <Route path="/team/:id" component={Team} />
+          <Route path="/livescores" component={GameScores} />
         </Switch>
       </div>
     </Router>

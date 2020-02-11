@@ -1,13 +1,10 @@
 import React from 'react';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-lg navbar-light">
-        <Link className="navbar-brand brand-title" to="#">
-          Soccer Hooligans 365
-        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,13 +19,18 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink className="nav-link heading-title" to="/Competition">
+              <NavLink className="nav-link heading-title" to="/competition/:id">
                 Standings
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link heading-title" to="/Scorers">
                 Scorers
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link heading-title" to="/livescores">
+                Live Scores
               </NavLink>
             </li>
           </ul>
