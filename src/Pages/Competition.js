@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './competition.css';
 
 import API from '../API';
 import NavBar from '../Components/NavBar';

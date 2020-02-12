@@ -1,4 +1,5 @@
-import './Team.scss';
+//import './Team.scss';
+import './Team.css';
 import API from '../API';
 import Squad from './Squad';
 import { groupBy } from 'lodash';

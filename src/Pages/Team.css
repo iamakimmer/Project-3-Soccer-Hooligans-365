@@ -1,0 +1,104 @@
+.Crest {
+    max-width: 200px;
+    border-radius: 8px;
+  }
+
+    
+body, html {
+  height: 100%;
+  background-color: black;
+}
+  
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  
+  
+  #table {
+  color: gray;
+  font-weight: bold;
+  }
+    
+  tr {
+  border-bottom: 1px solid gray;
+  }
+  
+  th {
+  color: ivory;
+  font-size: 18px;
+  border-bottom: 3px solid gray;
+  }
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+
+#table {
+color: white;
+font-weight: bold;
+font-family: 'Gupter', serif;
+font-size: 17px;
+padding: 5px;
+}
+  
+tr {
+border-bottom: 1px solid gray;
+}
+
+th {
+color: ivory;
+font-size: 18px;
+border-bottom: 3px solid gray;
+}
+
+
+
+#players {
+color: black;
+font-family: 'Calistoga', cursive;
+}
+
+li {
+  padding: 15px;
+}
+
+#team-info {
+margin-left:auto;
+margin-right:auto;
+background-color: ivory;
+height: 100%; 
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.bg3 {
+  background-color: white;
+  height: 100%; 
+  background-size: cover;
+  min-height:100%;
+  }
+
+.bg4 {
+background-color: black;
+}
+
+.navlink {
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex; 
+  justify-content: center
+}
+
+.Team {
+width: 100%;
+}
