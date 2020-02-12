@@ -3,6 +3,7 @@ import League from "../Components/League";
 import Loading from "../Components/Loading";
 import DateNavBarBtn from "../Components/DateNavBarBtn";
 import TickClock from "../Components/TickClock";
+import './button.css';
 
 import {
   rearrangeMatches,
@@ -110,7 +111,7 @@ export default class App extends Component {
       <>
         <div className="app-header">
           <span className="app-name">
-            Soccer Hooligans 365 Scores
+            Soccer Hooligans 365 Scores &nbsp;
           </span>
           <TickClock />
         </div>
@@ -123,6 +124,7 @@ export default class App extends Component {
         <div className="container">
           {!isLoading ? leaguesComponent : <Loading />}
         </div>
+        
       </>
     );
   }
