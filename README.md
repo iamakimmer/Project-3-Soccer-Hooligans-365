@@ -12,7 +12,7 @@ React Based Soccer Application that pulls data from a Football database.  It pro
 * Firebase
 
 ## Login
-To use, create a login and 
+To use, create a login and then you will be able to select a league
 
 ## To use locally
 Clone this repository onto your machine
