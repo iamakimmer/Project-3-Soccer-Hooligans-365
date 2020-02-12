@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d018cb658453ae1698521a509e8852a",
+    "revision": "64d5e7d3509d5a2f0e27241f94104f1c",
     "url": "/Project-3-Soccer-Hooligans-365/index.html"
   },
   {
-    "revision": "d54b7d2ea0e01b5d735a",
-    "url": "/Project-3-Soccer-Hooligans-365/static/css/main.8aad93e1.chunk.css"
+    "revision": "75645098480f8f2f8311",
+    "url": "/Project-3-Soccer-Hooligans-365/static/css/main.4b1cc079.chunk.css"
   },
   {
     "revision": "130acf022a220101445c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Project-3-Soccer-Hooligans-365/static/js/2.87e0d9c0.chunk.js.LICENSE"
   },
   {
-    "revision": "d54b7d2ea0e01b5d735a",
-    "url": "/Project-3-Soccer-Hooligans-365/static/js/main.3071d318.chunk.js"
+    "revision": "75645098480f8f2f8311",
+    "url": "/Project-3-Soccer-Hooligans-365/static/js/main.bdfe46df.chunk.js"
   },
   {
     "revision": "96f13b1c43b07b8b704f",
