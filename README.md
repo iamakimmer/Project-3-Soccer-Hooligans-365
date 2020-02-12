@@ -1,5 +1,5 @@
 # Project-3-Soccer-Hooligans-365
-React Based Soccer Application that pulls data from a Football database.  It provides information for popular futbol leagues around the world. It will provide standings, teams, competition, and matchup.
+React Based Soccer Application that pulls data from a Football database.  It provides information for popular futbol leagues around the world. It will provide standings, teams, competition, and matchup.  
 
 ## Technologies Used
 * Deployed with Heroku
