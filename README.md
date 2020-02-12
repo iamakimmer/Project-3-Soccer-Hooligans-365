@@ -17,12 +17,12 @@ To use, create a login and
 ## To use locally
 Clone this repository onto your machine
 Run the following commands:
-' npm install '
-' npm start '
+`npm install`
+`npm start`
 
 If successfully connected view application on: 
 
-localhost:3000
+`localhost:3000`
 
 
 ## Collaborators
