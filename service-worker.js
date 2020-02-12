@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Project-3-Soccer-Hooligans-365/precache-manifest.bf047535e4018baa6c205d97790c0d7c.js"
+  "/Project-3-Soccer-Hooligans-365/precache-manifest.3ea985eba7f61d8db210f23126106339.js"
 );
 
 self.addEventListener('message', (event) => {
