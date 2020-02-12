@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Project-3-Soccer-Hooligans-365/static/css/main.8aad93e1.chunk.css",
+    "main.js": "/Project-3-Soccer-Hooligans-365/static/js/main.3071d318.chunk.js",
+    "main.js.map": "/Project-3-Soccer-Hooligans-365/static/js/main.3071d318.chunk.js.map",
+    "runtime-main.js": "/Project-3-Soccer-Hooligans-365/static/js/runtime-main.92450b12.js",
+    "runtime-main.js.map": "/Project-3-Soccer-Hooligans-365/static/js/runtime-main.92450b12.js.map",
+    "static/js/2.87e0d9c0.chunk.js": "/Project-3-Soccer-Hooligans-365/static/js/2.87e0d9c0.chunk.js",
+    "static/js/2.87e0d9c0.chunk.js.map": "/Project-3-Soccer-Hooligans-365/static/js/2.87e0d9c0.chunk.js.map",
+    "index.html": "/Project-3-Soccer-Hooligans-365/index.html",
+    "precache-manifest.65364c6cb6c4862c8278fbc32bc757c8.js": "/Project-3-Soccer-Hooligans-365/precache-manifest.65364c6cb6c4862c8278fbc32bc757c8.js",
+    "service-worker.js": "/Project-3-Soccer-Hooligans-365/service-worker.js",
+    "static/css/main.8aad93e1.chunk.css.map": "/Project-3-Soccer-Hooligans-365/static/css/main.8aad93e1.chunk.css.map",
+    "static/js/2.87e0d9c0.chunk.js.LICENSE": "/Project-3-Soccer-Hooligans-365/static/js/2.87e0d9c0.chunk.js.LICENSE",
+    "static/media/2000.png": "/Project-3-Soccer-Hooligans-365/static/media/2000.9a735bda.png",
+    "static/media/2001.png": "/Project-3-Soccer-Hooligans-365/static/media/2001.52417194.png",
+    "static/media/2016.png": "/Project-3-Soccer-Hooligans-365/static/media/2016.3e41a0e9.png",
+    "static/media/2018.png": "/Project-3-Soccer-Hooligans-365/static/media/2018.3771cdc5.png",
+    "static/media/android-chrome-192x192.png": "/Project-3-Soccer-Hooligans-365/static/media/android-chrome-192x192.eb8f47e5.png",
+    "static/media/android-chrome-512x512.png": "/Project-3-Soccer-Hooligans-365/static/media/android-chrome-512x512.cda31c01.png",
+    "static/media/apple-touch-icon.png": "/Project-3-Soccer-Hooligans-365/static/media/apple-touch-icon.54351065.png",
+    "static/media/index.css": "/Project-3-Soccer-Hooligans-365/static/media/background5.afca8b29.jpg",
+    "static/media/logo.png": "/Project-3-Soccer-Hooligans-365/static/media/logo.7b4f261f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92450b12.js",
+    "static/js/2.87e0d9c0.chunk.js",
+    "static/css/main.8aad93e1.chunk.css",
+    "static/js/main.3071d318.chunk.js"
+  ]
+}
