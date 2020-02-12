@@ -41,11 +41,11 @@ function signOut() {
 auth.onAuthStateChanged(function (user) {
     if (user) {
 
-var email = user.email;
-console.log("Active User " + email);
+        var email = user.email;
+        console.log("Active User " + email);
 
-    }else {
-console.log("No Active User")
+    } else {
+        console.log("No Active User")
 
     }
 })
